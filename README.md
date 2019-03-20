@@ -3,7 +3,7 @@ LF is replaced by CRLF in all files from the file folder.
 Imports are used with GOPATH so put ICA02 in go folder.
 
 # ICA02
-## Oppgave 1
+## Oppgave 1 a og c
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1iterate.PNG)
@@ -16,9 +16,14 @@ Metoden `GreetingASCII() string` returnerer en string "Hello :-)". Den printer u
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1greeting.PNG)
 
+## Oppgave 1 b
 Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string returnert fra `GreetingASCII() string` metoden, og tester at verdien til hvert tegn ligger under maksgrensen for verdier i ASCII tabellen. 
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1test.PNG)
+
+### Output
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1testoutput.PNG)
+
 
 ### Main og Terminal
 
@@ -30,7 +35,7 @@ Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string ret
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal2.PNG)
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal3.PNG)
 
-## Oppgave 2A
+## Oppgave 2a
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2iterate.PNG)
@@ -52,14 +57,14 @@ Metoden `GreetingASCII() string` returnerer en string "Salut, ça va °-) Ça co
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal2.PNG)
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal3.png)
 
-## OPPGAVE 2B
+## Oppgave 2b
 Testen `TestGreetingExtendedASCII(t *testing.T)` itererer over alle tegn i en string returnert fra `GreetingASCII() string` metoden, og tester at verdien til hvert tegn ligger over maksgrensen for normale verdier i ASCII tabellen og under maksgrensen for verdier i den utvidede ASCII tabellen. Testen er ikke helt fullført, da den kun sjekker mot det standard tegnsettet. Det kan legges til sjekking opp mot utvidet ASCII tegnsett for andre språk.
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2test.PNG)
 
-## Oppgave 3
+## Oppgave 3a
 
-## 3B
+## Oppgave 3b
 
 ## Oppgave 3c
 Metoden `PrintTreasureUTF8(treasureString string)` tar en string literal som parameter. Ved bruk av `strings.Replace()` metoden erstatter vi alle tilfeller av UTF-16 enkoding med UTF-8 enkoding. Stringen dekodes ved hjelp av hex pakkens `DecodeString(str string)` metode, og printes deretter ut.
