@@ -58,7 +58,6 @@ Testen `TestGreetingExtendedASCII(t *testing.T)` itererer over alle tegn i en st
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2test.PNG)
 
 ## Oppgave 3
-![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg3treasure.PNG)
 
 ## 3B
 
@@ -68,7 +67,7 @@ Metoden `PrintTreasureUTF8(treasureString string)` tar en string literal som par
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg3printtreasureutf8.PNG)
 
 ### Output
-
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg3treasure.PNG)
 
 
 
