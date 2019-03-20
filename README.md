@@ -16,16 +16,7 @@ Metoden `GreetingASCII() string` returnerer en string "Hello :-)". Den printer u
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1greeting.PNG)
 
-## Oppgave 1 b
-Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string returnert fra `GreetingASCII() string` metoden, og tester at verdien til hvert tegn ligger under maksgrensen for verdier i ASCII tabellen. 
-
-![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1test.PNG)
-
-### Output
-![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1testoutput.PNG)
-
-
-### Main og Terminal
+### Main og Output
 
 `Main()` metoden kjører `IterateOverASCIIStringLiteral(ascii.ASCII)` og `GenerateASCIIStringLiteral()`.
 
@@ -34,6 +25,15 @@ Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string ret
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal1.PNG)
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal2.PNG)
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal3.PNG)
+
+## Oppgave 1 b
+Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string returnert fra `GreetingASCII() string` metoden, og tester at verdien til hvert tegn ligger under maksgrensen for verdier i ASCII tabellen. 
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1test.PNG)
+
+### Output
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1testoutput.PNG)
+
 
 ## Oppgave 2a
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
@@ -48,7 +48,7 @@ Metoden `GreetingASCII() string` returnerer en string "Salut, ça va °-) Ça co
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2greeting.PNG)
 
-### Main og Terminal
+### Main og Output
 `Main()` metoden kjører `IterateOverASCIIStringLiteral(ascii.ASCII)` og `GenerateASCIIStringLiteral()`.
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2main.PNG)
@@ -64,7 +64,15 @@ Testen `TestGreetingExtendedASCII(t *testing.T)` itererer over alle tegn i en st
 
 ## Oppgave 3a
 
+
 ## Oppgave 3b
+Metoden `FileAnalysis(b []byte)` itererer over en byteslice og printer ut hvert element i tegn format. Den henter språk formatering string fra metoden `getLanguage()`.
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg3fileanalysis.PNG)
+
+Metoden `getLanguage(r []rune) string` sjekker hvilket språk filen har fra parameter `r []rune` ved å sjekke enkelte runes mot `unicode.Cyrillic` og `unicode.Latin`. 
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg3getlanguage.PNG)
 
 ## Oppgave 3c
 Metoden `PrintTreasureUTF8(treasureString string)` tar en string literal som parameter. Ved bruk av `strings.Replace()` metoden erstatter vi alle tilfeller av UTF-16 enkoding med UTF-8 enkoding. Stringen dekodes ved hjelp av hex pakkens `DecodeString(str string)` metode, og printes deretter ut.
