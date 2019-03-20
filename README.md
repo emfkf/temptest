@@ -54,7 +54,7 @@ Testen `TestGreetingExtendedASCII(t *testing.T)` itererer over alle tegn i en st
 
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal1.PNG)
 ![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal2.PNG)
-![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal3.PNG)
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal3.png)
 
 ## Oppgave 3
 
