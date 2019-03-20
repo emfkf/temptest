@@ -47,6 +47,15 @@ Testen `TestGreetingExtendedASCII(t *testing.T)` itererer over alle tegn i en st
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2test.PNG)
 
+### Main og Terminal
+`Main()` metoden kjører `IterateOverASCIIStringLiteral(ascii.ASCII)` og `GenerateASCIIStringLiteral()`.
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg2main.PNG)
+
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal1.PNG)
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal2.PNG)
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg2terminal3.PNG)
+
 ## Oppgave 3
 
 ## Oppgave 4
