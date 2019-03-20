@@ -10,9 +10,15 @@ Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en
 
 Metoden `GenerateASCIIStringLiteral() string` genererer og returnerer en ASCII string literal gjennom en for loop fra HEX verdi 00 til 7F, eller 0 til 127. For hver verdi skrives det assosierte ASCII tegnet inn i en string gjennom `WriteString(s string)` metoden gjennom en buffer fra bytes pakken. 
 
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1generate.PNG)
+
 Metoden `GreetingASCII() string` returnerer en string "Hello :-)". Den printer ut hvert tegn fra en byteslice av stringen formatert til tegn. 
 
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1greeting.PNG)
+
 Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string returnert fra `GreetingASCII() string` metoden, og tester at verdien til hvert tegn ligger under maksgrensen for verdier i ASCII tabellen. 
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/test.PNG)
 
 ## Oppgave 2
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
