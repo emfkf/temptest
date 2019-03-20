@@ -20,6 +20,16 @@ Testen `TestGreetingASCII(t *testing.T)` itererer over alle tegn i en string ret
 
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1test.PNG)
 
+### Main og Terminal
+
+`Main()` metoden kjører `IterateOverASCIIStringLiteral(ascii.ASCII)` og `GenerateASCIIStringLiteral()`.
+
+![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1main.PNG)
+
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal1.PNG)
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal2.PNG)
+![Output](https://github.com/emfkf/temptest/blob/master/pictures/opg1terminal3.PNG)
+
 ## Oppgave 2
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
 
