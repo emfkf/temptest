@@ -5,6 +5,7 @@ Imports are used with GOPATH so put ICA02 in go folder.
 # ICA02
 ## Oppgave 1
 Metoden `IterateOverASCIIStringLiteral(sl string)` itererer over elementene i en string gitt som parameter. Hvert element printes ut via print format string funksjonen fra 'fmt' pakken i 3 format: [ASCII-kode heksadesimalt][Dobbel-kvotet symbol for ASCII-kode][ASCII-kode binært] eller `"%X %q %b"`. 
+
 ![Metoden](https://github.com/emfkf/temptest/blob/master/pictures/opg1iterate.PNG)
 
 Metoden `GenerateASCIIStringLiteral() string` genererer og returnerer en ASCII string literal gjennom en for loop fra HEX verdi 00 til 7F, eller 0 til 127. For hver verdi skrives det assosierte ASCII tegnet inn i en string gjennom `WriteString(s string)` metoden gjennom en buffer fra bytes pakken. 
